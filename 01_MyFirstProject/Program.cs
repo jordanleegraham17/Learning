@@ -14,6 +14,14 @@ namespace _01_MyFirstProject
             // basic hello world type output to get things running
             Console.WriteLine("Welcome to my 50th C# project although this is the first on a new computer.");
 
+            // calling the RequestUsername metho 
+            RequestUsername();
+
+        }
+
+        // creating a method for requesting users name
+        static void RequestUsername()
+        {
             // adding a while loop to restart the program if the name is not correct
             while (true)
             {
@@ -25,7 +33,7 @@ namespace _01_MyFirstProject
                 if (personsName.Equals("Jordan", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"Welcome {personsName}"); // reading the name back to the person using newer formatting
-                    //Console.ReadLine(); // using this line to keep the cmd prmpt open
+                    Console.ReadLine(); // using this line to keep the cmd prmpt open
                     break;
                 }
                 else
@@ -33,7 +41,6 @@ namespace _01_MyFirstProject
                     Console.WriteLine("Incorrect name, pls try again.");
                 }
             }
-
         }
     }
 }

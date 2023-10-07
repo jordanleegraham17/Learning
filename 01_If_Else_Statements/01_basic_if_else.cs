@@ -20,15 +20,28 @@ namespace _01_If_Else_Statements
             // validate the input as a int
             if (int.TryParse(CurrentAirspeed, out int AIRSPEED))
             {
-                if (AIRSPEED > 100)
+                if (AIRSPEED >= 160)
                 {
                     Console.WriteLine($"Current IAS: {CurrentAirspeed}");
-                    Console.WriteLine("IAS above minimum threshold for flaps. Please retract flaps to avoid structural damage");
+                    Console.WriteLine("IAS at Never Exceed Speed (VNE)");
+                    Console.ReadLine();
+                }
+                else if (AIRSPEED == 120)
+                {
+                    Console.WriteLine($"Current IAS: {CurrentAirspeed}");
+                    Console.WriteLine("Maximum Structural Cruising Speed (VNO)");
+                    Console.ReadLine();
+                }
+                else if (AIRSPEED > 120 && AIRSPEED < 160)
+                {
+                    Console.WriteLine($"Current IAS: {CurrentAirspeed}");
+                    Console.WriteLine("Yellow Arc; Smooth air operating range (from VNO to VNE)");
                     Console.ReadLine();
                 }
                 else
                 {
-                    Console.WriteLine("Happy flying!");
+                    Console.WriteLine($"Current IAS: {CurrentAirspeed}");
+                    Console.WriteLine("Green Arc: Normal operating speed range (from VSI to VNO); Happy flying!");
                     Console.ReadLine();
                 }
             }

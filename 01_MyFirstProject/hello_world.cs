@@ -9,7 +9,7 @@ using System.Xml.Schema;
 
 namespace _01_MyFirstProject
 {
-    class hello_world
+    class HelloWorld
     {
         static void Main(string[] args)
         {

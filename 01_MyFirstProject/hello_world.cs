@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace _01_MyFirstProject
 {
-    class Program
+    class hello_world
     {
         static void Main(string[] args)
         {
             // basic hello world type output to get things running
             Console.WriteLine("Welcome to my 50th C# project although this is the first on a new computer.");
 
-            // calling the RequestUsername metho 
+            // calling the RequestUsername method
             RequestUsername();
 
         }
@@ -33,7 +35,6 @@ namespace _01_MyFirstProject
                 if (personsName.Equals("Jordan", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"Welcome {personsName}"); // reading the name back to the person using newer formatting
-                    Console.ReadLine(); // using this line to keep the cmd prmpt open
                     break;
                 }
                 else
@@ -41,6 +42,7 @@ namespace _01_MyFirstProject
                     Console.WriteLine("Incorrect name, pls try again.");
                 }
             }
-        }
+        } 
+
     }
 }

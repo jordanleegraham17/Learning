@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _01_If_Else_Statements
 {
-    class BasicIfElse
+    class AirspeedIndicator
     {
         static void Main()
         {
@@ -49,6 +49,6 @@ namespace _01_If_Else_Statements
             {
                 Console.Write("Please enter an integer value for airspeeds.");
             }
-        }        
+        }
     }
 }

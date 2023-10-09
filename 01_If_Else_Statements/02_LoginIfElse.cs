@@ -12,7 +12,7 @@ namespace _01_If_Else_Statements
      */
     class LoginSystem //learning about internal keyword for encapsulation - different to Java
     {
-        public static void main(String[] args)
+        public static void Main(String[] args)
         {
             String userName = "Jordan";
             String passWord = "123456";
@@ -40,6 +40,7 @@ namespace _01_If_Else_Statements
                         if (passWordAttempt == passWord)
                         {
                             Console.WriteLine("LOGGED IN WOO");
+                            Console.ReadLine();
                         }
                         else
                         {

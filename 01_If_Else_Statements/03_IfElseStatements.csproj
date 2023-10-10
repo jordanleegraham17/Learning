@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_01_If_Else_Statements.LoginSystem</StartupObject>
+    <StartupObject>_01_If_Else_Statements.C_Ailerons</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="A_AirspeedIndicator.cs" />
     <Compile Include="B_LoginSystem.cs" />
+    <Compile Include="C_Ailerons.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

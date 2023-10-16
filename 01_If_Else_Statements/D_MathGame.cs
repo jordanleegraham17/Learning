@@ -24,21 +24,45 @@ namespace _01_If_Else_Statements
 
             // _______ code below here ____________
             int valueOne, valueTwo, result; // create variables for the two values and the result
+            bool isValidInput = false; //using this to validate user input
 
-            // take in the users first choice of value
-            Console.WriteLine("Please enter your first value");
-            valueOne = int.Parse(Console.ReadLine());
+            // while loop to continue asking user for an input
+            while (!isValidInput)
+            {
+                Console.WriteLine("Please enter your first value");
 
-            // take in the users second choice of value
-            Console.WriteLine($"Your first value is: {valueOne}, \nPlease enter your second value:");
-            valueTwo = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Your second value is: {valueTwo}");
-            
-            // calculate and readback the result
-            result = valueOne + valueTwo;
-            Console.WriteLine($"{valueOne} + {valueTwo} = {result}");
-            Console.ReadLine();
-            
+                // taking in and validating the user input for valueOne is an integer
+                if (int.TryParse(Console.ReadLine(), out valueOne))
+                {
+                    isValidInput = true; // the user did enter an integer value
+                    // take in the users second choice of value
+                    Console.WriteLine($"Your first value is: {valueOne}, \nPlease enter your second value:");
+                    
+                    // while loop to continue asking user for second value
+                    while (isValidInput == true)
+                    {
+                        // take in and validate user input for valueTwo
+                        if (int.TryParse(Console.ReadLine(), out valueTwo))
+                        {
+                            Console.WriteLine($"Your second value is: {valueTwo} ");
+
+                            // calculate and readback the result
+                            result = valueOne + valueTwo;
+                            Console.WriteLine($"{valueOne} + {valueTwo} = {result}");
+                            Console.ReadLine();
+                        } //end if
+                        else
+                        {
+                            Console.WriteLine("Incorrect input, please enter a valid integer");
+                        } //end else
+                    }// end while loop
+
+                }// end if
+                else
+                {
+                    Console.WriteLine("Incorrect input, please enter a valid integer"); // warning msg to user
+                }// end else
+            }// end while          
         } //end main method
     } //end class
 } //end namespace

@@ -114,6 +114,9 @@ namespace _01_If_Else_Statements
         {
             int divisionResult = valueOne / valueTwo;
             Console.WriteLine($"{valueOne}/{valueTwo} = {divisionResult}");
+
+            int modulusResult = valueOne % valueTwo;
+            Console.WriteLine($"Bonus modulus result (remainder): {valueOne} % {valueTwo} = {modulusResult}");
         }
 
         // multiplication method for multiplying the two values entered by the user

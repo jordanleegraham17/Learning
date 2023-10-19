@@ -14,7 +14,7 @@ namespace _04_Loops
 
         static void Main(String[] args)
         {
-            int currentValue = 20; // using a hardcoded entry number to start with - will make this user defined later
+            int currentValue = 20; // using a hardcoded entry number to start with - will make this user defined 
             
             while (currentValue >= 1)
             {

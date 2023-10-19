@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_IfElseStatements", "01_I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_DataTypes", "01b_DataTypes\02_DataTypes.csproj", "{707F17E9-5BC0-4E56-84EF-76FE5456154B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_SwitchStatements", "04_SwitchStatements\04_SwitchStatements.csproj", "{B67C0EF6-FB80-4D9E-8736-56AD46396BE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_SwitchStatements", "04_SwitchStatements\05_SwitchStatements.csproj", "{B67C0EF6-FB80-4D9E-8736-56AD46396BE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Loops", "04_Loops\04_Loops.csproj", "{0A4473BB-ECD8-487F-93A1-497BD20BF55F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B67C0EF6-FB80-4D9E-8736-56AD46396BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67C0EF6-FB80-4D9E-8736-56AD46396BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67C0EF6-FB80-4D9E-8736-56AD46396BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4473BB-ECD8-487F-93A1-497BD20BF55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4473BB-ECD8-487F-93A1-497BD20BF55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4473BB-ECD8-487F-93A1-497BD20BF55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4473BB-ECD8-487F-93A1-497BD20BF55F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

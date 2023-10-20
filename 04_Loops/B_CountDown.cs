@@ -14,13 +14,21 @@ namespace _04_Loops
 
         static void Main(String[] args)
         {
-            int currentValue = 20; // using a hardcoded entry number to start with - will make this user defined 
-            
-            while (currentValue >= 1)
+            Console.WriteLine("Please enter a value to countdown from:");// msg to start the program
+            string userInput = Console.ReadLine(); // using a hardcoded entry number to start with - will make this user defined
+
+            if (int.TryParse(userInput, out int currentValue))
             {
-                currentValue--;
-                Console.WriteLine(currentValue.ToString());
-            }
+                while (currentValue > 1)
+                {
+                    currentValue--;//decrease the currentValue
+                    Console.WriteLine(currentValue.ToString());//printing value were at to console
+                }//end while loop
+            }//end if validation for int input
+            else
+            {
+                Console.WriteLine("Please enter a valid integer");
+            }//end else
             Console.ReadKey();
         }// end main
     }//end class

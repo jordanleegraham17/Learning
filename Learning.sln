@@ -5,11 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MyFirstProject", "01_MyFirstProject\01_MyFirstProject.csproj", "{39329D48-FE15-461F-B25C-5037DD6F4EC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_IfElseStatements", "01_If_Else_Statements\03_IfElseStatements.csproj", "{658E5689-400A-4D1C-A3A4-84778ACB5C9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_IfElseStatements", "03_IfElseStatements\03_IfElseStatements.csproj", "{658E5689-400A-4D1C-A3A4-84778ACB5C9F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_DataTypes", "01b_DataTypes\02_DataTypes.csproj", "{707F17E9-5BC0-4E56-84EF-76FE5456154B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_DataTypes", "02_DataTypes\02_DataTypes.csproj", "{707F17E9-5BC0-4E56-84EF-76FE5456154B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_SwitchStatements", "04_SwitchStatements\05_SwitchStatements.csproj", "{B67C0EF6-FB80-4D9E-8736-56AD46396BE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_SwitchStatements", "05_SwitchStatements\05_SwitchStatements.csproj", "{B67C0EF6-FB80-4D9E-8736-56AD46396BE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Loops", "04_Loops\04_Loops.csproj", "{0A4473BB-ECD8-487F-93A1-497BD20BF55F}"
 EndProject

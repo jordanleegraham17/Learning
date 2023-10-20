@@ -22,18 +22,19 @@ namespace _04_Loops
                 // ask user for value to enter and read the input
                 Console.WriteLine("Welcome, please enter a max value you would like to see the even numbers of: ");
                 string userInput = Console.ReadLine();
+                int currentValue = 0;
 
                 //if statement to validate user input is an integer
                 if (int.TryParse(userInput, out int userValue))
                 {
-                    Console.WriteLine($"\n Now printing all EVEN values up until {userValue}...");
-                    
-                    // creating a loop to check all values
-                    int startingValue = 0;
-                    if (startingValue/startingValue == 0)
+                    Console.WriteLine($"\nNow printing all EVEN values up until {userValue}...");
+                    while (currentValue < userValue)
                     {
-                        Console.WriteLine("working");
+                        // just printing all numbers up until the user defined value for now to have the program going..
+                        currentValue++;
+                        Console.WriteLine(currentValue);
                     }
+            
                 }//end if for int validation
                 else
                 {

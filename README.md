@@ -6,86 +6,86 @@ may sometimes skip ahead and insert some items such as a while loop into the beg
 
 ## Module 1: Getting Started
 
-- Introduction to C# and .NET
-- Setting up your development environment (Visual Studio, Visual Studio Code)
-- Writing and running your first C# program
+- [x] Introduction to C# and .NET
+- [x] Setting up your development environment (Visual Studio, Visual Studio Code)
+- [x] Writing and running your first C# program
 
 ## Module 2: Basics of C# Syntax
 
-- Variables and data types (int, double, string, bool, etc.)
-- Input and output (Console.WriteLine, Console.ReadLine)
-- Comments and documentation (//, /* */, ///<summary>)
+- [x] Variables and data types (int, double, string, bool, etc.)
+- [x] Input and output (Console.WriteLine, Console.ReadLine)
+- [x] Comments and documentation (//, /* */, ///<summary>)
 
 ## Module 3: Control Flow
 
-- Conditional statements (if, else, else if)
-- Switch statements
-- Loops (for, while, do-while)
-- foreach loop
-- Break and continue statements
+- [x] Conditional statements (if, else, else if)
+- []  Switch statements
+- []  Loops (for, while, do-while)
+- []  foreach loop
+- []  Break and continue statements
 
 ## Module 4: Functions and Methods
 
-- Declaring and calling methods
-- Parameters and return values
-- Method overloading
-- Scope and lifetime of variables
-- Pass by value vs. pass by reference
+- []  Declaring and calling methods
+- []  Parameters and return values
+- []  Method overloading
+- []  Scope and lifetime of variables
+- []  Pass by value vs. pass by reference
 
 ## Module 5: Arrays and Collections
 
-- Arrays (single-dimensional, multi-dimensional)
-- Lists and collections (List<T>, Dictionary<TKey, TValue>)
-- Using LINQ for querying collections
+- []  Arrays (single-dimensional, multi-dimensional)
+- []  Lists and collections (List<T>, Dictionary<TKey, TValue>)
+- []  Using LINQ for querying collections
 
 ## Module 6: Object-Oriented Programming (OOP) Basics
 
-- Classes and objects
-- Constructors
-- Properties and fields
-- Inheritance and base classes
-- Polymorphism and interfaces
+- []  Classes and objects
+- []  Constructors
+- []  Properties and fields
+- []  Inheritance and base classes
+- []  Polymorphism and interfaces
 
 ## Module 7: Exception Handling
 
-- Handling exceptions with try-catch
-- Creating custom exceptions
-- Exception propagation
+- []  Handling exceptions with try-catch
+- []  Creating custom exceptions
+- []  Exception propagation
 
 ## Module 8: File I/O and Data Serialization
 
-- Reading and writing text files
-- Reading and writing binary files
-- JSON and XML data serialization
+- []  Reading and writing text files
+- []  Reading and writing binary files
+- []  JSON and XML data serialization
 
 ## Module 9: Advanced Topics
 
-- Delegates and events
-- Generics
-- Asynchronous programming with async/await
-- Attributes and reflection
+- []  Delegates and events
+- []  Generics
+- []  Asynchronous programming with async/await
+- []  Attributes and reflection
 
 ## Module 10: Working with Databases
 
-- Introduction to ADO.NET
-- Connecting to databases
-- Executing SQL queries
-- Entity Framework basics (if you want to explore ORM)
+- []  Introduction to ADO.NET
+- []  Connecting to databases
+- []  Executing SQL queries
+- []  Entity Framework basics (if you want to explore ORM)
 
 ## Module 11: Building a Simple Application
 
-- Combining what you've learned to build a small C# application
+- []  Combining what you've learned to build a small C# application
 
 ## Module 12: Advanced Projects
 
-- Working on more complex projects and exploring libraries and frameworks (WPF, ASP.NET Core, Xamarin, etc.) based on your interests.
+- []  Working on more complex projects and exploring libraries and frameworks (WPF, ASP.NET Core, Xamarin, etc.) based on your interests.
 
 ## Module 13: Testing and Debugging
 
-- Writing unit tests with NUnit or xUnit
-- Debugging techniques and tools
+- []  Writing unit tests with NUnit or xUnit
+- []  Debugging techniques and tools
 
 ## Module 14: Deployment and Publishing
 
-- Packaging and deploying your application
-- Publishing to different platforms (desktop, web, mobile)
+- []  Packaging and deploying your application
+- []  Publishing to different platforms (desktop, web, mobile)

@@ -19,10 +19,10 @@ may sometimes skip ahead and insert some items such as a while loop into the beg
 ## Module 3: Control Flow
 
 - [x] Conditional statements (if, else, else if)
-- []  Switch statements
-- []  Loops (for, while, do-while)
-- []  foreach loop
-- []  Break and continue statements
+- [ ] Switch statements
+- [ ] Loops (for, while, do-while)
+- [ ] foreach loop
+- [ ] Break and continue statements
 
 ## Module 4: Functions and Methods
 

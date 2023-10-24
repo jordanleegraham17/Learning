@@ -32,7 +32,9 @@ namespace _04_Loops
                     {
                         // just printing all numbers up until the user defined value for now to have the program going..
                         currentValue++;
-                        if (currentValue/currentValue == 2)
+                        Console.WriteLine(currentValue);
+                        int nextValue = currentValue + 1;
+                        if (currentValue%nextValue == 1)
                         {
                             Console.WriteLine(currentValue);
                         }

@@ -6,6 +6,7 @@
     <RootNamespace>_01b_DataTypes</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>_01b_DataTypes.B_Operators</StartupObject>
   </PropertyGroup>
 
 </Project>

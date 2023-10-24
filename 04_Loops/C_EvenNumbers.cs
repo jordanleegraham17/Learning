@@ -32,8 +32,15 @@ namespace _04_Loops
                     {
                         // just printing all numbers up until the user defined value for now to have the program going..
                         currentValue++;
-                        Console.WriteLine(currentValue);
-                    }
+                        if (currentValue/currentValue == 2)
+                        {
+                            Console.WriteLine(currentValue);
+                        }
+                        else
+                        {
+                            currentValue++;
+                        }
+                    }//end while loop
             
                 }//end if for int validation
                 else

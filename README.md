@@ -1,6 +1,8 @@
 # C# .NET Development Syllabus
 
-> This syllabus was created as a rough idea of items to follow along with to learn the basics of C#.
+> This syllabus was created as a rough idea of items to follow along with to learn the basics of C#. I will mostly be following the below link and creating 4/5 mini projects per section to learn the topics better myself.
+
+[tutorial](https://www.youtube.com/watch?v=M5ugY7fWydE)
 
 ## Module 1: Getting Started
 

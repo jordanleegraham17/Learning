@@ -1,8 +1,6 @@
 # C# .NET Development Syllabus
 
-> This syllabus was created as a rough idea of items to follow along with to learn the basics of C#. The  syllabus itself was formed by CHATGPT, as I have previously completed
-a bachelors (honours) of science in Computing and completed over 5 years studying Java OOP. The goal for this project is to recreate my learning of Java from scratch which I still remember so
-may sometimes skip ahead and insert some items such as a while loop into the beginning tutorials such as when learning if / else statements. The goal is to complete 4/5 mini projects around each item for example: 4 mini projects for each item within the list of 'control flow' items.
+> This syllabus was created as a rough idea of items to follow along with to learn the basics of C#.
 
 ## Module 1: Getting Started
 

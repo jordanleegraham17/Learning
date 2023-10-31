@@ -32,6 +32,12 @@ namespace _01b_DataTypes
             //replace a string with another
             Console.WriteLine("Replacing string : {0}", randomString.Replace("is my friend", "is my bestest friend"));
 
+            //uppercase a string
+            Console.WriteLine("Uppercase: {0}", randomString.ToUpper());
+
+            //lowercase a string
+            Console.WriteLine("Lowercase: {0}", randomString.ToLower());
+
         }//end main
     }//end class
 }//end namespace

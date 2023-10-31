@@ -6,7 +6,7 @@
     <RootNamespace>_01b_DataTypes</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>_01b_DataTypes.E_StringFunctions</StartupObject>
+    <StartupObject>_01b_DataTypes.F_Arrays</StartupObject>
   </PropertyGroup>
 
 </Project>

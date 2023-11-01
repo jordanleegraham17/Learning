@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_04_Loops.C_EvenNumbers</StartupObject>
+    <StartupObject>_04_Loops.D_ForLoops_Intro</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
     <Compile Include="A_WhileLoops.cs" />
     <Compile Include="B_CountDown.cs" />
     <Compile Include="C_EvenNumbers.cs" />
+    <Compile Include="D_ForLoops_Intro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -21,12 +21,19 @@ namespace _04_Loops
             int userValueN = int.Parse(Console.ReadLine());
             Console.WriteLine($"\nYou have entered: {userValueN}, which is of type: {userValueN.GetType()}");
 
+            // defining a sum value
+            int sum = 0;
+
             // for loop to print each value from 1-N
             for (int i = 1; i <= userValueN; i++)
             {
-               // printing out each value between 1-N 
-               Console.WriteLine(i);
+                // printing out each value between 1-N 
+                Console.WriteLine(i);
+
+                sum += i;
             }//end for loop
+
+            Console.WriteLine($"\nThe sum of integers between 1-{userValueN} is: {sum}");
 
             Console.ReadKey();
         }//end main

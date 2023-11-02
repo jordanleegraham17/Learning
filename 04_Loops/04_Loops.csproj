@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_04_Loops.E_SumOfIntegers</StartupObject>
+    <StartupObject>_04_Loops.F_ReverseString</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

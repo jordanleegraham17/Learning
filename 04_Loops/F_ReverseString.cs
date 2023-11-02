@@ -14,6 +14,23 @@ namespace _04_Loops
     {
         static void Main(String[] args)
         {
+            //printing out a string to reverse
+            string stringToReverse = "Reverse This String Please";
+
+            //print that string to console
+            Console.WriteLine(stringToReverse);
+
+            //count the numer of values in the string - show to console
+            Console.WriteLine($"The lenght of the string is: {stringToReverse.Length}");
+
+            //check can we loop through each value in the string
+            for (int i = 0; i < stringToReverse.Length; i++) 
+            {
+                Console.WriteLine(stringToReverse[i]);
+            }//end for loop
+
+            Console.ReadKey();
+
 
         }//end main
     }//end class

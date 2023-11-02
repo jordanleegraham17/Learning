@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace _04_Loops
 {
-    class D_SumOfIntegers
+    class E_SumOfIntegers
     {
         static void Main(String[] args)
         {

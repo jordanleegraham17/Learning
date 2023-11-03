@@ -23,11 +23,18 @@ namespace _04_Loops
             //count the numer of values in the string - show to console
             Console.WriteLine($"The lenght of the string is: {stringToReverse.Length}");
 
+            //creating an empty string to store the reversed string
+            string reversedString = "";
+
             //check can we loop through each value in the string
-            for (int i = 0; i < stringToReverse.Length; i++) 
+            for (int i = stringToReverse.Length - 1; i >= 0; i--) 
             {
-                Console.WriteLine(stringToReverse[i]);
+                reversedString += stringToReverse[i]; //adding each character to the new string
+
             }//end for loop
+
+            //print out the result
+            Console.WriteLine(reversedString);
 
             Console.ReadKey();
 

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_01_If_Else_Statements.D_MathGame</StartupObject>
+    <StartupObject>_01_If_Else_Statements.E_VoteChecker</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,7 @@
     <Compile Include="B_LoginSystem.cs" />
     <Compile Include="C_Ailerons.cs" />
     <Compile Include="D_MathGame.cs" />
+    <Compile Include="E_VoteChecker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

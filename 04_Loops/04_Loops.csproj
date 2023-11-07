@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_04_Loops.F_ReverseString</StartupObject>
+    <StartupObject>_04_Loops.G_ForEachLearning</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,6 +52,7 @@
     <Compile Include="D_ForLoops_Intro.cs" />
     <Compile Include="E_SumOfIntegers.cs" />
     <Compile Include="F_ReverseString.cs" />
+    <Compile Include="G_ForEachLearning.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -35,10 +35,7 @@ namespace _04_Loops
             string unevenMessage = "This value is uneven!";
             string evenMessage = "This value IS EVEN!";
 
-            Array.Sort(arrayResult);
-
-            int testResult = 9 % 7;
-            Console.WriteLine(testResult);
+            Console.WriteLine($"Your array sorted : {arrayResult}");
 
             foreach (int i in arrayResult)
             {

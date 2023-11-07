@@ -14,7 +14,10 @@ namespace _04_Loops
     {
         static void Main(string[] args)
         {
+            //variables
             string greetingMessage = "Welcome, the program will now begin?..";
+
+            //program begins
             Console.WriteLine(greetingMessage);
 
             int[] randomNumbers = { 10, 17, 2, 11, 8, 23, 25, 49, 32, 1 };
@@ -29,12 +32,25 @@ namespace _04_Loops
         //this method will sort the array and print "for each" before each item of the array
         static void PrintResult(int[] arrayResult)
         {
+            string unevenMessage = "This value is uneven!";
+            string evenMessage = "This value IS EVEN!";
+
             Array.Sort(arrayResult);
+
+            int testResult = 9 % 7;
+            Console.WriteLine(testResult);
 
             foreach (int i in arrayResult)
             {
-                Console.WriteLine($"{i} ForEach");
-            }
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine($"{i} : {evenMessage}");
+                }
+                else
+                {
+                    Console.WriteLine($"{i} : {unevenMessage}");
+                }
+            }//end foreach
         }//end PrintResult method
 
     }//end class

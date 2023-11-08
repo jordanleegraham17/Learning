@@ -20,13 +20,13 @@
 
 - [x] Conditional statements (if, else, else if)
 - [ ] Switch statements
-- [ ] Loops (for, while, do-while)
-- [ ] foreach loop
+- [x] Loops (for, while, do-while)
+- [x] foreach loop
 - [ ] Break and continue statements
 
 ## Module 4: Functions and Methods
 
-- [ ] Declaring and calling methods
+- [x] Declaring and calling methods
 - [ ] Parameters and return values
 - [ ] Method overloading
 - [ ] Scope and lifetime of variables

@@ -17,6 +17,15 @@ namespace _04_SwitchStatements
     {
         static void Main(String[] args)
         {
+            //variables
+            int indicatedAirSpeed = 54;
+            
+            //ternary operator example
+            bool canFly = indicatedAirSpeed >= 50 ? true : false;
+
+            //testing ternary operator
+            Console.WriteLine($"Current IAS: {indicatedAirSpeed}, can we lift off : {canFly}");
+            Console.ReadKey();//keeping the terminal alive
 
         }//end main
     }//end class

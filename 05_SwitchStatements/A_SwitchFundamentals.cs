@@ -25,6 +25,30 @@ namespace _04_SwitchStatements
 
             //testing ternary operator
             Console.WriteLine($"Current IAS: {indicatedAirSpeed}, can we lift off : {canFly}");
+
+            //prompting user for input of 0-3
+            Console.WriteLine("Please enter a value (0, 1, 2 or 3) : ");
+
+            //switch statement
+            switch (indicatedAirSpeed)
+            {
+                case 0:
+                    Console.WriteLine("case 0");
+                    break;
+                case 1:
+                    Console.WriteLine("case 1");
+                    break;
+                case 2:
+                    Console.WriteLine("case 2");
+                    break;
+                case 54:
+                    Console.WriteLine("case 3");
+                    break;
+                default:
+                    Console.WriteLine("You did not enter a valid number from the list.");
+                    break;
+            }
+
             Console.ReadKey();//keeping the terminal alive
 
         }//end main

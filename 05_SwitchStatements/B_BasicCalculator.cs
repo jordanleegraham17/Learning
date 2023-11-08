@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _04_SwitchStatements
 {
-    class A_BasicCalculator
+    class B_BasicCalculator
     {
         /* the purpose of this class will be to practice switch statements
          * this will be done by recreating an earlier project 'MathGame.cs' in the 03_IfElseStatements section

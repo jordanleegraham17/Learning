@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_04_SwitchStatements.A_BasicCalculator</StartupObject>
+    <StartupObject>_04_SwitchStatements.A_SwitchFundamentals</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,7 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="A_BasicCalculator.cs" />
+    <Compile Include="A_SwitchFundamentals.cs" />
+    <Compile Include="B_BasicCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

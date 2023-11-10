@@ -34,6 +34,7 @@ namespace _06_BasicFunctions
         {
             //variables
             int userAircraftSelection;
+            string aircraftType;
             bool validInput = true;
 
             //set the users choice of aircraft based on input
@@ -46,14 +47,30 @@ namespace _06_BasicFunctions
                 //validate the users input choice as an integer value and not different characters
                 if (int.TryParse(Console.ReadLine(), out userAircraftSelection))
                 {
-                    Console.WriteLine($"You have selected : {userAircraftSelection}");
-                    Console.ReadKey();
-                }
+                    switch (userAircraftSelection)
+                    {
+                        case 1:
+                            aircraftType = "Cessna 152";
+                            Console.WriteLine($"You have selected : {aircraftType}");
+                            break;
+                        case 2:
+                            aircraftType = "Cessna 172";
+                            Console.WriteLine($"You have selected : {aircraftType}");
+                            break;
+                        default:
+                            Console.WriteLine("You did not choose a valid aircraft type, please try again.");
+                            AircraftSelection();
+                            break;
+                    }//end switch statement
+                }//end if validate user selection
                 else
                 {
-                    Console.WriteLine("Please enter a valid integer to the corresponding aircraft in the list");
-                }
-            }
+                    Console.WriteLine("Please enter a valid integer to a corresponding aircraft in the list.");
+                }//end else
+
+                Console.ReadKey();//keeping the command line alive
+
+            }//end while loop
         }//end AircraftSelection() method 
 
 

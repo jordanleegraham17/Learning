@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_06_BasicFunctions.A_FirstFunctions</StartupObject>
+    <StartupObject>_06_BasicFunctions.B_AircraftPerformanceCalculator</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="A_FirstFunctions.cs" />
+    <Compile Include="B_AircraftPerformanceCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

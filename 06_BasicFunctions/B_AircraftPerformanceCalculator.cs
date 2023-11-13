@@ -18,7 +18,9 @@ namespace _06_BasicFunctions
     class B_AircraftPerformanceCalculator
     {
         //global variables
+        bool validInput = true;
         string aircraftType;
+
         static void Main(String[] args)
         {
             //variables
@@ -79,12 +81,20 @@ namespace _06_BasicFunctions
             string fuelWeight;
             string passengerWeight;
             string luggageWeight;
+            int numberOfPassengers;
 
             //console output so we know this method has been reached - will remove after testing
             Console.WriteLine($"\nBeginning Weight Calculations for type {aircraftType}...");
 
             //calculating passenger weight
-
+            if (aircraftType == "Cessna 172")
+            {
+                Console.WriteLine("Please enter the number of passengers on board: ");
+            }
+            else
+            {
+                Console.WriteLine("Do you have a co-pilot on board?");
+            }
 
             Console.ReadKey();//keeping the command line alive
         }//end WeightCalculation method

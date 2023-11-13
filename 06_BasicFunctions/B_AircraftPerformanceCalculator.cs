@@ -17,6 +17,8 @@ namespace _06_BasicFunctions
 {
     class B_AircraftPerformanceCalculator
     {
+        //global variables
+        string aircraftType;
         static void Main(String[] args)
         {
             //variables
@@ -34,7 +36,6 @@ namespace _06_BasicFunctions
         {
             //variables
             int userAircraftSelection;
-            string aircraftType;
             bool validInput = true;
 
             //set the users choice of aircraft based on input
@@ -50,12 +51,14 @@ namespace _06_BasicFunctions
                     switch (userAircraftSelection)
                     {
                         case 1:
-                            aircraftType = "Cessna 152";
+                            string aircraftType = "Cessna 152";
                             Console.WriteLine($"You have selected : {aircraftType}");
+                            WeightCalculation(aircraftType);
                             break;
                         case 2:
                             aircraftType = "Cessna 172";
                             Console.WriteLine($"You have selected : {aircraftType}");
+                            WeightCalculation(aircraftType);
                             break;
                         default:
                             Console.WriteLine("You did not choose a valid aircraft type, please try again.");
@@ -67,11 +70,24 @@ namespace _06_BasicFunctions
                 {
                     Console.WriteLine("Please enter a valid integer to a corresponding aircraft in the list.");
                 }//end else
-
-                Console.ReadKey();//keeping the command line alive
-
             }//end while loop
-        }//end AircraftSelection() method 
+        }//end AircraftSelection() method
+
+        static void WeightCalculation(string aircraftType)
+        {
+            //variables
+            string fuelWeight;
+            string passengerWeight;
+            string luggageWeight;
+
+            //console output so we know this method has been reached - will remove after testing
+            Console.WriteLine($"\nBeginning Weight Calculations for type {aircraftType}...");
+
+            //calculating passenger weight
+
+
+            Console.ReadKey();//keeping the command line alive
+        }//end WeightCalculation method
 
 
     }//end class

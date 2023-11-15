@@ -111,7 +111,8 @@ namespace _06_BasicFunctions
                                 totalPassengerWeight += passengerWeight;
                             }//end for loop
 
-                            Console.WriteLine($"\nThe total weight of passengers onboard is: {totalPassengerWeight}"); //giving total passenger weight
+                            Console.WriteLine($"\nThe total weight of passengers onboard is: {totalPassengerWeight}KG"); //giving total passenger weight
+                            LuggageWeightCalculation();
 
                         }//end if
                         else
@@ -160,6 +161,11 @@ namespace _06_BasicFunctions
             Console.ReadKey();//keeping the command line alive
         }//end PassengerWeightCalculation method
 
+        private static void LuggageWeightCalculation()
+        {
+            Console.WriteLine("\nNow calculating  luggage weight");
+            Console.ReadKey();//keeping the command line alive
+        }//end LuggageWeightCalculation method
 
     }//end class
 }//end namespace

@@ -56,12 +56,12 @@ namespace _06_BasicFunctions
                         case 1:
                             string aircraftType = "Cessna 152";
                             Console.WriteLine($"You have selected : {aircraftType}");
-                            WeightCalculation(aircraftType);
+                            PassengerWeightCalculation(aircraftType);
                             break;
                         case 2:
                             aircraftType = "Cessna 172";
                             Console.WriteLine($"You have selected : {aircraftType}");
-                            WeightCalculation(aircraftType);
+                            PassengerWeightCalculation(aircraftType);
                             break;
                         default:
                             Console.WriteLine("You did not choose a valid aircraft type, please try again.");
@@ -76,15 +76,14 @@ namespace _06_BasicFunctions
             }//end while loop
         }//end AircraftSelection() method
 
-        static void WeightCalculation(string aircraftType)
+        static void PassengerWeightCalculation(string aircraftType)
         {
             //variables
             bool validInput = true;
-            string fuelWeight;
             int passengerWeight;
-            string luggageWeight;
             int numberOfPassengers;
             int coPilotOnboardSelection;
+            int totalPassengerWeight = 0;
 
             //console output so we know this method has been reached - will remove after testing
             Console.WriteLine($"\nBeginning Weight Calculations for type {aircraftType}...");
@@ -92,18 +91,34 @@ namespace _06_BasicFunctions
             //calculating passenger weight
             if (aircraftType == "Cessna 172")
             {
+                //while loop to continue prompting user
                 while (validInput)
                 {
-                    Console.WriteLine("Please enter the number of passengers on board: ");
+                    //ask the user to enter the number of passengers onboard
+                    Console.WriteLine("\nPlease enter the number of passengers on board: ");
                     if (int.TryParse(Console.ReadLine(), out numberOfPassengers))
                     {
-                        for (int i = 1; i <= numberOfPassengers; i++)
+                        //dont let the user select more than 3 passengers
+                        if (numberOfPassengers <= 3)
                         {
-                            Console.WriteLine($"\nPlease enter the weight of passenger {i} in Kilograms (KG)");
-                            passengerWeight = int.Parse(Console.ReadLine());
-                            Console.WriteLine($"Passenger {i} weight: {passengerWeight}KG");
+                            //ask for each passengers weight
+                            for (int i = 1; i <= numberOfPassengers; i++)
+                            {
+                                Console.WriteLine($"\nPlease enter the weight of passenger {i} in Kilograms (KG)");
+                                passengerWeight = int.Parse(Console.ReadLine());
+                                Console.WriteLine($"Passenger {i} weight: {passengerWeight}KG");
+                                //adding up each passenger weight for a total
+                                totalPassengerWeight += passengerWeight;
+                            }//end for loop
 
-                        }//end for loop
+                            Console.WriteLine($"\nThe total weight of passengers onboard is: {totalPassengerWeight}"); //giving total passenger weight
+
+                        }//end if
+                        else
+                        {
+                            Console.WriteLine("A C172 Aircraft can only hold maximum 3 passengers. Please use a larger aircraft.");
+                            validInput = false;
+                        }//end else                      
                     }//end if
                     else
                     {
@@ -143,7 +158,7 @@ namespace _06_BasicFunctions
             }//end else
 
             Console.ReadKey();//keeping the command line alive
-        }//end WeightCalculation method
+        }//end PassengerWeightCalculation method
 
 
     }//end class

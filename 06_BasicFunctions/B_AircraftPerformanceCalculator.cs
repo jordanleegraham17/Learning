@@ -114,7 +114,7 @@ namespace _06_BasicFunctions
                             }//end for loop
 
                             //adding pilot weight to this calculation
-                            Console.WriteLine("\n80Finally, Please enter the Pilot weight in Kilograms (KG)");
+                            Console.WriteLine("\nFinally, Please enter the Pilot weight in Kilograms (KG)");
                             pilotWeight = int.Parse(Console.ReadLine());
                             Console.WriteLine($"Pilot weight: {pilotWeight}KG");
 
@@ -191,8 +191,6 @@ namespace _06_BasicFunctions
                     }//end else
                 }//end while
             }//end else
-
-            Console.ReadKey();//keeping the command line alive
         }//end PassengerWeightCalculation method
 
         private static void LuggageWeightCalculation()

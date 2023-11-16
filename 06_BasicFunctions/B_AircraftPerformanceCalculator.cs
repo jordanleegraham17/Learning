@@ -84,6 +84,7 @@ namespace _06_BasicFunctions
             int numberOfPassengers;
             int coPilotOnboardSelection;
             int totalPassengerWeight = 0;
+            int pilotWeight;
 
             //console output so we know this method has been reached - will remove after testing
             Console.WriteLine($"\nBeginning Weight Calculations for type {aircraftType}...");
@@ -112,7 +113,13 @@ namespace _06_BasicFunctions
                                 totalPassengerWeight += passengerWeight;
                             }//end for loop
 
+                            //adding pilot weight to this calculation
+                            Console.WriteLine("\n80Finally, Please enter the Pilot weight in Kilograms (KG)");
+                            pilotWeight = int.Parse(Console.ReadLine());
+                            Console.WriteLine($"Pilot weight: {pilotWeight}KG");
+
                             //final output of passenger weight for C172 aircraft and directing to next method
+                            totalPassengerWeight = totalPassengerWeight + pilotWeight;
                             Console.WriteLine($"\nThe total weight of passengers onboard is: {totalPassengerWeight}KG"); //giving total passenger weight
                             LuggageWeightCalculation();
 
@@ -152,7 +159,7 @@ namespace _06_BasicFunctions
                             
                             //ask for the pilots weight
                             Console.WriteLine("Please enter the pilots weight in Kilograms (KG): ");
-                            int pilotWeight = int.Parse(Console.ReadLine());
+                            pilotWeight = int.Parse(Console.ReadLine());
                             Console.WriteLine($"Pilot Weight = {pilotWeight}KG");
 
                             //calculate total passenger weight
@@ -166,7 +173,7 @@ namespace _06_BasicFunctions
                         {
                             //ask for only the pilots weight
                             Console.WriteLine("Please enter the pilot weight only : ");
-                            int pilotWeight = int.Parse(Console.ReadLine());
+                            pilotWeight = int.Parse(Console.ReadLine());
                             Console.WriteLine($"Pilot Weight = {pilotWeight}KG");
 
                             //calculate total passenger weight

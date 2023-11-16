@@ -141,14 +141,34 @@ namespace _06_BasicFunctions
                         if (coPilotOnboard == true)
                         {
                             Console.WriteLine("Please enter the co-pilots weight in Kilograms (KG): ");
-                            int coPilotWeight = Console.Read();
+                            int coPilotWeight = int.Parse(Console.ReadLine());
                             Console.WriteLine($"Co-Pilot Weight = {coPilotWeight}KG");
+                            
+                            //ask for the pilots weight
+                            Console.WriteLine("Please enter the pilots weight in Kilograms (KG): ");
+                            int pilotWeight = int.Parse(Console.ReadLine());
+                            Console.WriteLine($"Pilot Weight = {pilotWeight}KG");
+
+                            //calculate total passenger weight
+                            totalPassengerWeight = coPilotWeight + pilotWeight;
+                            Console.WriteLine($"The total passenger weight is: {totalPassengerWeight}KG");
+
+                            //go to luggage weight calculation
+                            LuggageWeightCalculation();
                         }//end if
                         else
                         {
+                            //ask for only the pilots weight
                             Console.WriteLine("Please enter the pilot weight only : ");
-                            int pilotWeight = Console.Read();
+                            int pilotWeight = int.Parse(Console.ReadLine());
                             Console.WriteLine($"Pilot Weight = {pilotWeight}KG");
+
+                            //calculate total passenger weight
+                            totalPassengerWeight = pilotWeight;
+                            Console.WriteLine($"The total passenger weight is: {totalPassengerWeight}KG");
+                            
+                            //go to luggage weight calculation
+                            LuggageWeightCalculation();
                         }//end else
                     }//end if
                     else

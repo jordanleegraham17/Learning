@@ -88,7 +88,7 @@ namespace _06_BasicFunctions
             //console output so we know this method has been reached - will remove after testing
             Console.WriteLine($"\nBeginning Weight Calculations for type {aircraftType}...");
 
-            //calculating passenger weight
+            //calculating passenger weight depending on aircraft type
             if (aircraftType == "Cessna 172")
             {
                 //while loop to continue prompting user
@@ -107,16 +107,19 @@ namespace _06_BasicFunctions
                                 Console.WriteLine($"\nPlease enter the weight of passenger {i} in Kilograms (KG)");
                                 passengerWeight = int.Parse(Console.ReadLine());
                                 Console.WriteLine($"Passenger {i} weight: {passengerWeight}KG");
+
                                 //adding up each passenger weight for a total
                                 totalPassengerWeight += passengerWeight;
                             }//end for loop
 
+                            //final output of passenger weight for C172 aircraft and directing to next method
                             Console.WriteLine($"\nThe total weight of passengers onboard is: {totalPassengerWeight}KG"); //giving total passenger weight
                             LuggageWeightCalculation();
 
                         }//end if
                         else
                         {
+                            //output if the user enters an invalid option
                             Console.WriteLine("A C172 Aircraft can only hold maximum 3 passengers. Please use a larger aircraft.");
                             validInput = false;
                         }//end else                      
@@ -132,12 +135,15 @@ namespace _06_BasicFunctions
                 //handle when the aircraft selection is for a cessna 152 (cannot hold passengers)
                 while(validInput)
                 {
+                    //checking if the user has a co-pilot onboard
                     Console.WriteLine("\nDo you have a co-pilot on board?");
                     Console.WriteLine("1. Yes\t2.No");
                     if (int.TryParse(Console.ReadLine(), out coPilotOnboardSelection))
                     {
                         bool coPilotOnboard = coPilotOnboardSelection == 1 ? true : false;
                         Console.WriteLine($"Co-Pilot onboard: {coPilotOnboard}");
+
+                        //calculate the weight if there is a co-pilot
                         if (coPilotOnboard == true)
                         {
                             Console.WriteLine("Please enter the co-pilots weight in Kilograms (KG): ");
@@ -173,6 +179,7 @@ namespace _06_BasicFunctions
                     }//end if
                     else
                     {
+                        //handling if the user doesnt select an available value
                         Console.WriteLine("Please enter a valid integer to the corresponding selection in the list.");
                     }//end else
                 }//end while

@@ -54,16 +54,24 @@ namespace _06_BasicFunctions
 
             int targetValue = 5;//this is the value we want to calculate from the values within our array
 
-            //output the values
-            Console.WriteLine($"Array: [{string.Join(", ", firstArray)}]");//outputting the array like this shows contents of the array
-            Console.WriteLine($"Target: {targetValue}");
+            TwoSum(firstArray,targetValue);
 
             Console.ReadKey();//keeping the command prompt alive
         }//end main
 
         //method to solve the problem
-        public int[] TwoSum(int[] nums, int target)
+        public static int[] TwoSum(int[] nums, int target)
         {
+            //output the values
+            Console.WriteLine($"Array: [{string.Join(", ", nums)}]");//outputting the array like this shows contents of the array
+            Console.WriteLine($"Target: {target}");
+
+            //looping through the values of the array
+            for (int i = nums[0]; i <= nums.Length; i++)
+            {
+                Console.WriteLine(i);
+            }
+
             return nums;
         }
     }//end class

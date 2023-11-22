@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="A_FirstFunctions.cs" />
-    <Compile Include="B_AircraftPerformanceCalculator.cs" />
     <Compile Include="B_TwoSumProblem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

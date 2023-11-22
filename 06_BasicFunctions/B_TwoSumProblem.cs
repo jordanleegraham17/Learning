@@ -46,7 +46,25 @@ namespace _06_BasicFunctions
     {
         public static void Main(String[] args)
         {
-            Console.WriteLine("Begin challenge,");
+            //declaring the values (hardcoded)
+            int[] firstArray = new int[3];
+            firstArray[0] = 1;
+            firstArray[1] = 2;
+            firstArray[2] = 3;
+
+            int targetValue = 5;//this is the value we want to calculate from the values within our array
+
+            //output the values
+            Console.WriteLine($"Array: [{string.Join(", ", firstArray)}]");//outputting the array like this shows contents of the array
+            Console.WriteLine($"Target: {targetValue}");
+
+            Console.ReadKey();//keeping the command prompt alive
         }//end main
+
+        //method to solve the problem
+        public int[] TwoSum(int[] nums, int target)
+        {
+            return nums;
+        }
     }//end class
 }//end namespace

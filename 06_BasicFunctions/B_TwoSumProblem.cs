@@ -63,16 +63,23 @@ namespace _06_BasicFunctions
         public static int[] TwoSum(int[] nums, int target)
         {
             //output the values
-            Console.WriteLine($"Array: [{string.Join(", ", nums)}]");//outputting the array like this shows contents of the array
-            Console.WriteLine($"Target: {target}");
+            Console.WriteLine($"Input Numbers: [{string.Join(", ", nums)}], Target: {target}");//outputting the array like this shows contents of the array
+            Console.WriteLine("\n");//making space here ignore
 
-            //looping through the values of the array
-            for (int i = nums[0]; i <= nums.Length; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                Console.WriteLine(i);
-            }
-
+                if (nums[i] + nums[i]+1 == target)
+                {
+                    Console.WriteLine($"{nums[i]} + {nums[i]+1} == {target} : Target reached!");
+                }//end if
+                else
+                {
+                    Console.WriteLine($"{nums[i]} + {nums[i] + 1} != {target} : NOT REACHED!");
+                }//end else
+            }//end else
+     
             return nums;
-        }
+
+        }//end method
     }//end class
 }//end namespace

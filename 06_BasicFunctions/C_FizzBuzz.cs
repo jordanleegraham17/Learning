@@ -26,12 +26,16 @@ namespace _06_BasicFunctions
             int startingValue = 0;
 
             // begin counting from that number upwards
-            while (startingValue >= 0 & startingValue < 50)
+            while (startingValue >= 0 & startingValue < 100)
             {
                 startingValue++;
                 if (startingValue % 3 == 0)
                 {
-                    Console.WriteLine("Fizz");
+                    Console.WriteLine("FIZZ!");
+                }
+                else if (startingValue % 5 == 0)
+                {
+                    Console.WriteLine("BUZZ!");
                 }
                 else
                 {

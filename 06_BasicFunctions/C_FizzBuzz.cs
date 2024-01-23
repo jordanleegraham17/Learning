@@ -26,7 +26,7 @@ namespace _06_BasicFunctions
             int startingValue = 0;
 
             // begin counting from that number upwards
-            while (startingValue >= 0 & startingValue < 100)
+            while (startingValue >= 0 && startingValue < 100)
             {
                 startingValue++;
                 if (startingValue % 3 == 0 && startingValue % 5 == 0)

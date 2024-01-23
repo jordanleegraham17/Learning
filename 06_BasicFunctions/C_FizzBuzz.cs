@@ -29,7 +29,11 @@ namespace _06_BasicFunctions
             while (startingValue >= 0 & startingValue < 100)
             {
                 startingValue++;
-                if (startingValue % 3 == 0)
+                if (startingValue % 3 == 0 && startingValue % 5 == 0)
+                {
+                    Console.WriteLine("FIZZBUZZ!!");
+                }
+                else if (startingValue % 3 == 0)
                 {
                     Console.WriteLine("FIZZ!");
                 }

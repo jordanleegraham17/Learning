@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_06_BasicFunctions.B_TwoSumProblem</StartupObject>
+    <StartupObject>_06_BasicFunctions.C_FizzBuzz</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="A_FirstFunctions.cs" />
     <Compile Include="B_TwoSumProblem.cs" />
+    <Compile Include="C_FizzBuzz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

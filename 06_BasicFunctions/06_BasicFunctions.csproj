@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_06_BasicFunctions.C_FizzBuzz</StartupObject>
+    <StartupObject>_06_BasicFunctions.D_PalindromeChecker</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
     <Compile Include="A_FirstFunctions.cs" />
     <Compile Include="B_TwoSumProblem.cs" />
     <Compile Include="C_FizzBuzz.cs" />
+    <Compile Include="D_PalindromeChecker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

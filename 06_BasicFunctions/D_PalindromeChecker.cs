@@ -10,7 +10,19 @@ namespace _06_BasicFunctions
     {
         static void Main(String[] args)
         {
-            Console.WriteLine("Palindrome Checker");
+            Console.WriteLine("Palindrome Checker\n");
+
+            //prompt the user for input
+            Console.WriteLine("Please enter a string value to check");
+            String userWord = Console.ReadLine();
+
+            //give the user back their word
+            Console.WriteLine($"Your word is: {userWord}\n");
+
+            //create an empty reverse of the user string
+            String userWordReversed = "";
+
+
             Console.ReadKey();
         }//end main
     }//end class

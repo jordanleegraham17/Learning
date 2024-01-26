@@ -22,6 +22,24 @@ namespace _06_BasicFunctions
             //create an empty reverse of the user string
             String userWordReversed = "";
 
+            //check can we loop through each letter of the string
+            for (int i = userWord.Length - 1; i >= 0; i--)
+            {
+                userWordReversed += userWord[i]; //adding each letter backwards to the empty reversed string
+            }
+
+            //check if the above successfully reversed the string
+            Console.WriteLine($"The reversed string is: {userWordReversed}");
+
+            //check if the word was a palindrome
+            if (userWordReversed == userWord)
+            {
+                Console.WriteLine("\nPALINDROME ALERT!");
+            }
+            else
+            {
+                Console.WriteLine("\nNot a Palindrome, try again!");
+            }
 
             Console.ReadKey();
         }//end main

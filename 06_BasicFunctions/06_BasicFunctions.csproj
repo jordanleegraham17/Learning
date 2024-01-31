@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_06_BasicFunctions.D_PalindromeChecker</StartupObject>
+    <StartupObject>_06_BasicFunctions.E_minutesConverter</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,7 @@
     <Compile Include="B_TwoSumProblem.cs" />
     <Compile Include="C_FizzBuzz.cs" />
     <Compile Include="D_PalindromeChecker.cs" />
+    <Compile Include="E_minutesConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

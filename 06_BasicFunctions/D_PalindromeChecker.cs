@@ -16,6 +16,12 @@ namespace _06_BasicFunctions
             Console.WriteLine("Please enter a string value to check");
             String userWord = Console.ReadLine();
 
+            checkPalindrome(userWord);
+        }//end main
+
+        //__________ FUNCTIONS _______________
+        static void checkPalindrome(String userWord)
+        {
             //give the user back their word
             Console.WriteLine($"Your word is: {userWord}\n");
 
@@ -42,6 +48,8 @@ namespace _06_BasicFunctions
             }
 
             Console.ReadKey();
-        }//end main
+        }//end check palindrome() method
+
+
     }//end class
 }//end namespace

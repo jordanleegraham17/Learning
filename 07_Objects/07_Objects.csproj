@@ -6,7 +6,7 @@
     <RootNamespace>_07_Objects</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>_07_Objects._01_Introduction</StartupObject>
+    <StartupObject>_07_Objects.Airplane</StartupObject>
   </PropertyGroup>
 
 </Project>
